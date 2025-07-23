@@ -1,0 +1,131 @@
+/* google poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global variable... */
+
+:root{
+
+  /* background-Color */
+
+  --primary-color:#990033;
+  --secondary-color:#ffc2b4;
+  --primary-nav-color:#e21056;
+  --primary-bg:rgb(153 0 51 / 14%);
+  --font-color:#b7b7b7;
+  --bg-color:#171717;
+  --bg-dark-color:#0c0b0b;
+  --white-color:#fdfffc;
+  --green-color:#0abf53;
+  --green-color-bg:rgb(10 191 83 / 17%);
+  --blue-color:#6168ff;
+  --blue-color-bg:rgb(97 104 255 /9%);
+  --border-color-light:rgb(255,255,255,0.2);
+  --box-shadow:0 16px 48px rgb(0 0 0 /12%);
+
+  
+
+
+
+
+  --primary-font:"Poppins", sans-serif;
+  
+}
+html,body{
+  font-size: 16px;
+  font-family: var(--primary-font);
+  background-color: var(--bg-color);
+  /* background-color: wheat; */
+
+
+}
+::-webkit-scrollbar{
+  width: .3125rem; ;
+}
+::-webkit-scrollbar-track{
+  background: var(--secondary-color);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+}
+/* pre -defined Classes  */
+
+a{
+  text-decoration: none;
+}
+.container-fluid{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right:16px ;
+  padding-left: 16px;
+}
+.container{
+  width: auto;
+  max-width: 82.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+.btn_wrapper{
+  margin-top: 5rem;
+  @media(max-width:992px){
+    width:100% ;
+    text-align: center;
+    display: block;
+  }
+  @media(max-width:772px){
+    margin-bottom: 3rem;
+  }
+
+  .btn{
+    padding: .857rem 2.571rem;
+    font-size: 1.143rem;
+    border-radius: 2.143rem ;
+    font-weight: 600;
+    box-shadow: 0 0.5rem 1rem rgb(16,16,16) ;
+    outline-offset: 0px;
+    border: none;
+    cursor: pointer;
+    background: var(--primary-color);
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      outline-offset: .625rem;
+    }
+    
+  }
+
+}
+
+h1{
+  font-size: 3.187rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+h2{
+  font-size: 2.87rem;
+  /* margin-bottom: 1.25rem; */
+  font-weight: 600;
+  color: var(--white-color);
+}
+h3{
+  font-size: 2.25rem;h1{
+  font-size: 3.187rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: var(--white-color);
+}
+  /* margin-bottom: 1.25rem; */
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+p{
+  font-size: 16px;
+  color: var(--font-color);
+  line-height: 1.624rem;
+
+}
